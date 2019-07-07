@@ -175,10 +175,11 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 		return cal1;
 	}
 
-	@BeforeSuite(alwaysRun = true)
-	public void setUp() throws Exception {
-
-	}
+	/*
+	 * @BeforeSuite(alwaysRun = true) public void setUp() throws Exception {
+	 * 
+	 * }
+	 */
 
 	protected void handleOnetokenBanner() {
 		driver.findElement(By.id("intro_got_it_tv")).click();
@@ -210,9 +211,9 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 	@AfterSuite(alwaysRun = true)
 	public void generateHTMLReports() {
 		
-		System.out.println("after suite");
+		
 		ReportHelper.generateCucumberReport();
-		driver.quit();
+		
 	}
 
 	

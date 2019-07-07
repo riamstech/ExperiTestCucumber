@@ -20,7 +20,7 @@ Feature: Login Page
       Given I open the app for the first time in my mobile device
       When I open the application
       Then I should see push notification inbox icon
-      Then I shoudl see Acces code/Bio Metric login fields
+      Then I should see Acces code/Bio Metric login fields
       And I should see Pre login Access tray items
 
       
@@ -34,7 +34,7 @@ Feature: Login Page
       Examples:
       |username|password|
       |test123 |test124 |
-      |test124 |test125 |
+    
      
       
       

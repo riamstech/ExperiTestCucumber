@@ -48,6 +48,7 @@ public class Login extends CucumberRunner {
 					myJiraClient.RaiseJiraIssue(scenario.getName(),GlobalVariables.stepstoReproduce,logError(scenario) , "mahammad.rasheed@nttdata.com", GlobalVariables.currentScreenshot);
 		}
 
+		driver.quit();
 	}
 	
 	private static String logError(Scenario scenario) {
@@ -74,7 +75,7 @@ public class Login extends CucumberRunner {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new PendingException();
 		openApp();
-		implicitWait(10);
+		implicitWait(5);
 		//handleOnetokenBanner();
 	}
 	

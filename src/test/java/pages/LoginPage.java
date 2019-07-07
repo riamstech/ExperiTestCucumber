@@ -142,7 +142,9 @@ public class LoginPage extends CucumberRunner {
 
 		{
 			captureScreenshot(new Exception().getStackTrace()[0].getMethodName());
+			//new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(By.xpath("homepage")));
 			return driver.findElement(By.id("homepage")).isDisplayed(); // need to change this.
+			//return true;
 
 		} catch (Exception e)
 		{
